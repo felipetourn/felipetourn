@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 24" width="600" height="24" role="img" aria-label="divider">
+<title>divider</title>
+<style>
+svg{--main:#0be1dd;--sec:#d0bfec;--blue:#0b88de;--pink:#fab7e2;--dim:#06706e;--alert:#ffb000;--bg:#000000}
+text{font-family:ui-monospace,"Courier New",monospace;white-space:pre}
+.m{fill:var(--main)}.s{fill:var(--sec)}.d{fill:var(--dim)}.a{fill:var(--alert)}.bg{fill:var(--bg)}
+.p{fill:var(--pink)}.f{fill:url(#fold)}.fh{fill:url(#barg)}
+.ms{stroke:var(--main);fill:none}.ds{stroke:var(--dim);fill:none}
+.b{font-weight:700}
+.c0{stop-color:var(--blue)}.c1{stop-color:var(--main)}.c2{stop-color:var(--pink)}
+.g0{stop-color:var(--main);stop-opacity:0}.g1{stop-color:var(--main);stop-opacity:.10}
+.crt{animation:flicker 7s infinite}
+.band{animation:roll 6s linear infinite}
+.blink{animation:blink 1s step-end infinite}
+@keyframes flicker{0%,100%{opacity:1}48%{opacity:1}49%{opacity:.86}50%{opacity:1}83%{opacity:.94}84%{opacity:1}}
+@keyframes roll{from{transform:translateY(-80px)}to{transform:translateY(24px)}}
+@keyframes blink{50%{opacity:0}}
+.sweep{animation:sweep 3.5s linear infinite}@keyframes sweep{from{transform:translateX(-140px)}to{transform:translateX(620px)}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}.band{display:none}.rm-show{opacity:1!important}}
+</style>
+<defs>
+<filter id="glow" x="-15%" y="-15%" width="130%" height="130%"><feGaussianBlur stdDeviation="2.2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<pattern id="scan" width="3" height="3" patternUnits="userSpaceOnUse"><rect width="3" height="1" fill="#000" opacity=".15"/></pattern>
+<radialGradient id="vig" cx="50%" cy="50%" r="75%"><stop offset="60%" stop-color="#000" stop-opacity="0"/><stop offset="100%" stop-color="#000" stop-opacity=".5"/></radialGradient>
+<linearGradient id="fold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" class="c0"/><stop offset="1" class="c1"/></linearGradient>
+<linearGradient id="barg" x1="150" x2="490" y1="0" y2="0" gradientUnits="userSpaceOnUse"><stop offset="0" class="c0"/><stop offset="1" class="c1"/></linearGradient>
+<linearGradient id="bandg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" class="g0"/><stop offset=".5" class="g1"/><stop offset="1" class="g0"/></linearGradient>
+</defs>
+<rect class="bg" width="600" height="24"/>
+<path d="M8 12H592" class="ds"/><path d="M20 10v4M40 10v4M60 8v8M80 10v4M100 10v4M120 8v8M140 10v4M160 10v4M180 8v8M200 10v4M220 10v4M240 8v8M260 10v4M280 10v4M300 8v8M320 10v4M340 10v4M360 8v8M380 10v4M400 10v4M420 8v8M440 10v4M460 10v4M480 8v8M500 10v4M520 10v4M540 8v8M560 10v4M580 10v4" class="ds"/><path d="M4 6v12M596 6v12" class="ms" stroke-width="2"/><linearGradient id="sw" x1="0" x2="1"><stop offset="0" class="g0"/><stop offset="1" class="c2"/></linearGradient><g class="sweep"><rect width="120" height="2" y="11" fill="url(#sw)" filter="url(#glow)"/><rect x="118" y="8" width="3" height="8" class="p" filter="url(#glow)"/></g>
+<rect width="600" height="24" fill="url(#scan)"/>
+</svg>

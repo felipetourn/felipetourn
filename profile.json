@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "theme": {
+    "main": "#319492",
+    "sec": "#AC9BC9",
+    "blue": "#306a92",
+    "pink": "#d990bf",
+    "alert": "#ffb000",
+    "bg": "#000000",
+    "saturate": 1.8,
+    "brightness": 1.2
+  },
+  "name": "Felipe Tourn",
+  "title": ["FELIPE", "TOURN"],
+  "role": "Junior Developer - Student",
+  "location": "",
+  "languages": [
+    "Java",
+    "Python",
+    "TypeScript",
+    "Rust",
+    "Kotlin",
+    "C"
+  ],
+  "frontend": "",
+  "backend": "",
+  "other": "",
+  "projects": [],
+  "contact": {
+    "mail": "",
+    "web": "",
+    "linkedin": ""
+  }
+}

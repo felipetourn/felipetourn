@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 272" width="600" height="272" role="img" aria-label="Felipe Tourn system panel">
+<title>Felipe Tourn system panel</title>
+<style>
+svg{--main:#0be1dd;--sec:#d0bfec;--blue:#0b88de;--pink:#fab7e2;--dim:#06706e;--alert:#ffb000;--bg:#000000}
+text{font-family:ui-monospace,"Courier New",monospace;white-space:pre}
+.m{fill:var(--main)}.s{fill:var(--sec)}.d{fill:var(--dim)}.a{fill:var(--alert)}.bg{fill:var(--bg)}
+.p{fill:var(--pink)}.f{fill:url(#fold)}.fh{fill:url(#barg)}
+.ms{stroke:var(--main);fill:none}.ds{stroke:var(--dim);fill:none}
+.b{font-weight:700}
+.c0{stop-color:var(--blue)}.c1{stop-color:var(--main)}.c2{stop-color:var(--pink)}
+.g0{stop-color:var(--main);stop-opacity:0}.g1{stop-color:var(--main);stop-opacity:.10}
+.crt{animation:flicker 7s infinite}
+.band{animation:roll 6s linear infinite}
+.blink{animation:blink 1s step-end infinite}
+@keyframes flicker{0%,100%{opacity:1}48%{opacity:1}49%{opacity:.86}50%{opacity:1}83%{opacity:.94}84%{opacity:1}}
+@keyframes roll{from{transform:translateY(-80px)}to{transform:translateY(272px)}}
+@keyframes blink{50%{opacity:0}}
+.led{animation:led 2.4s step-end infinite}@keyframes led{50%{opacity:.2}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}.band{display:none}.rm-show{opacity:1!important}}
+</style>
+<defs>
+<filter id="glow" x="-15%" y="-15%" width="130%" height="130%"><feGaussianBlur stdDeviation="2.2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<pattern id="scan" width="3" height="3" patternUnits="userSpaceOnUse"><rect width="3" height="1" fill="#000" opacity=".15"/></pattern>
+<radialGradient id="vig" cx="50%" cy="50%" r="75%"><stop offset="60%" stop-color="#000" stop-opacity="0"/><stop offset="100%" stop-color="#000" stop-opacity=".5"/></radialGradient>
+<linearGradient id="fold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" class="c0"/><stop offset="1" class="c1"/></linearGradient>
+<linearGradient id="barg" x1="150" x2="490" y1="0" y2="0" gradientUnits="userSpaceOnUse"><stop offset="0" class="c0"/><stop offset="1" class="c1"/></linearGradient>
+<linearGradient id="bandg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" class="g0"/><stop offset=".5" class="g1"/><stop offset="1" class="g0"/></linearGradient>
+</defs>
+<rect class="bg" width="600" height="272"/>
+<g class="crt">
+<rect x="6.5" y="6.5" width="587" height="259" class="ds"/>
+<path d="M6 20V6H20" class="ms" stroke-width="2"/>
+<path d="M594 20V6H580" class="ms" stroke-width="2"/>
+<path d="M6 252V266H20" class="ms" stroke-width="2"/>
+<path d="M594 252V266H580" class="ms" stroke-width="2"/>
+<text x="22" y="28" font-size="11" class="m b">DIAGNOSTIC PANEL // NODE 01</text><text x="578" y="28" font-size="11" class="s" text-anchor="end">UPLINK <tspan class="blink">●</tspan> OK</text><path d="M14 38H586" class="ds"/>
+<text x="22" y="58" font-size="13" class="m b" filter="url(#glow)">[ system ]</text><path d="M108 54H556" class="ds"/><text x="578" y="58" font-size="10" class="d" text-anchor="end">01</text>
+<text x="22" y="86" font-size="13" class="m">name <tspan class="d">...........</tspan> <tspan class="s">Felipe Tourn</tspan></text>
+<text x="22" y="106" font-size="13" class="m">role <tspan class="d">...........</tspan> <tspan class="s">Junior Developer - Student</tspan></text>
+<text x="22" y="134" font-size="13" class="m b" filter="url(#glow)">[ dev ]</text><path d="M85 130H556" class="ds"/><text x="578" y="134" font-size="10" class="d" text-anchor="end">02</text>
+<rect x="22.5" y="156.5" width="176.3" height="25" class="ds"/><path d="M22.0 162V156H28.0" class="ms" stroke-width="1.5"/><rect x="32.0" y="166" width="6" height="6" class="fh led" style="animation-delay:0.0s" filter="url(#glow)"/><text x="46.0" y="173" font-size="12" class="s">Java</text><text x="191.3" y="173" font-size="9" class="d" text-anchor="end">MOD-01</text>
+<rect x="211.8" y="156.5" width="176.3" height="25" class="ds"/><path d="M211.3 162V156H217.3" class="ms" stroke-width="1.5"/><rect x="221.3" y="166" width="6" height="6" class="fh led" style="animation-delay:-0.4s" filter="url(#glow)"/><text x="235.3" y="173" font-size="12" class="s">Python</text><text x="380.7" y="173" font-size="9" class="d" text-anchor="end">MOD-02</text>
+<rect x="401.2" y="156.5" width="176.3" height="25" class="ds"/><path d="M400.7 162V156H406.7" class="ms" stroke-width="1.5"/><rect x="410.7" y="166" width="6" height="6" class="fh led" style="animation-delay:-0.8s" filter="url(#glow)"/><text x="424.7" y="173" font-size="12" class="s">TypeScript</text><text x="570.0" y="173" font-size="9" class="d" text-anchor="end">MOD-03</text>
+<rect x="22.5" y="192.5" width="176.3" height="25" class="ds"/><path d="M22.0 198V192H28.0" class="ms" stroke-width="1.5"/><rect x="32.0" y="202" width="6" height="6" class="fh led" style="animation-delay:-1.2s" filter="url(#glow)"/><text x="46.0" y="209" font-size="12" class="s">Rust</text><text x="191.3" y="209" font-size="9" class="d" text-anchor="end">MOD-04</text>
+<rect x="211.8" y="192.5" width="176.3" height="25" class="ds"/><path d="M211.3 198V192H217.3" class="ms" stroke-width="1.5"/><rect x="221.3" y="202" width="6" height="6" class="fh led" style="animation-delay:-1.6s" filter="url(#glow)"/><text x="235.3" y="209" font-size="12" class="s">Kotlin</text><text x="380.7" y="209" font-size="9" class="d" text-anchor="end">MOD-05</text>
+<rect x="401.2" y="192.5" width="176.3" height="25" class="ds"/><path d="M400.7 198V192H406.7" class="ms" stroke-width="1.5"/><rect x="410.7" y="202" width="6" height="6" class="fh led" style="animation-delay:-2.0s" filter="url(#glow)"/><text x="424.7" y="209" font-size="12" class="s">C</text><text x="570.0" y="209" font-size="9" class="d" text-anchor="end">MOD-06</text>
+<path d="M14 238H586" class="ds"/><text x="22" y="254" font-size="11" class="d">END OF TRANSMISSION <tspan class="p blink">█</tspan></text>
+</g>
+<rect class="band" width="600" height="80" fill="url(#bandg)"/>
+<rect width="600" height="272" fill="url(#scan)"/>
+<rect width="600" height="272" fill="url(#vig)"/>
+</svg>
